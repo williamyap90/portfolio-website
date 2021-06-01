@@ -1,3 +1,8 @@
-h1 {
-    color: greenyellow
+.title {
+    font-size: 50pt;
+    text-align: center;
+}
+
+.main-nav {
+    text-align: center;
 }
