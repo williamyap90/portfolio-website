@@ -1,15 +1,13 @@
-/* remove browser default settings
 * {
     margin: 0;
     padding: 0;
-}         */
-
+}         
 
 .title {
     font-size: 50pt;
     text-align: center;
 }
 
-.main-nav {
+.nav {
     text-align: center;
 }
