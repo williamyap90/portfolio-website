@@ -43,7 +43,6 @@
 
 
 /* General styles */
-
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -68,14 +67,12 @@ strong { font-weight: var(--fw-bold) }
 
 
 /* Typography */
-
 h1,
 h2,
 h3 {
     line-height: 1em;
     margin: 0;
 }
-
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
@@ -114,6 +111,8 @@ h3 { font-size: var(--fs-h3) }
 /* Header */
 .logo {
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -130,19 +129,19 @@ h3 { font-size: var(--fs-h3) }
 
 .nav__item {
     list-style-type: none;
-    margin: 0.6em 2em 0;
-    font-size: var(--fs-h3);
+    margin: 0.5em 3em -0.5em;
+    font-size: 1em;
     font-family: var(--ff-primary);
 }
 
 .nav__link {
     text-decoration: none;
     color: white;
-    padding: 3px;
+    padding: 13px;
 }
 
 .nav__link:hover {
-    background-color: grey;
+    background-color: var(--clr-accent);
 }
 
 
@@ -156,7 +155,30 @@ h3 { font-size: var(--fs-h3) }
 /* About me section */
 
 
-/* Projects section */
+/* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
+.projects__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.project__item {
+    background: var(--clr-accent);
+    padding: 3em;
+    width: 12em;
+    height: 8em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.project__link {
+    text-decoration: none;
+    color: var(--clr-light);
+}
 
 
 /* Contact section */
