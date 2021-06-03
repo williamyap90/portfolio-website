@@ -117,6 +117,35 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
+/* Navigation bar - work in progess*/
+.nav {
+    width: 100%;
+    background-color: var(--clr-dark);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    list-style-type: none;
+    margin: 0.6em 2em 0;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-primary);
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+.nav__link:hover {
+    background-color: grey;
+}
+
+
 /* Intro section */
 
 .intro {
