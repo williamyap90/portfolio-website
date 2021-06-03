@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:wght@300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
         rel="stylesheet">
 
     <title>My Portfolio: William Yap</title>
@@ -17,6 +18,9 @@
 
 <body>
     <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo" width="400px">
+        </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -34,15 +38,15 @@
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">Hi, I am <strong>William Yap</strong></h1>
-        <p>Welcome to my portfolio site.</p>
-        <img src="images/main.jpg" alt="main background image, edit for more descriptive when image chosen">
+        <p class="section__subtitle section__subtitle--intro">Welcome to my portfolio site.</p>
+        <img src="images/intro.jpg" alt="main background image" class="intro-image">
     </section>
 
 
     <!-- About me -->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About me</h2>
-        <p class="section__subtitle section__subtitle--about"></p>
+        <p class="section__subtitle section__subtitle--about">Software developer</p>
 
         <div class="about-me__body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
@@ -53,32 +57,35 @@
                 laborum.</p>
         </div>
 
-        <img src="images/profilepic.jpg" alt="a picture of me">
+        <img src="images/me.jpg" alt="a picture of me">
     </section>
 
 
     <!-- Projects -->
     <section class="projects" id="projects">
         <h2 class="section__title section__title--about">Projects</h2>
-        <p class="section__subtitle section__subtitle--projects">Here is some of my work, some sort of grid to display
-            projects with brief description will be added here. Possibly a separate page for each project showing a more
-            indepth description and/or code. Use flexbox to create layout.</p>
+        <p class="section__subtitle section__subtitle--projects">Here is some of my work</p>
+        <p>Some sort of grid to display projects with brief description will be added here. Possibly a separate page for
+            each project showing a more indepth description and/or code. Use flexbox to create layout.</p>
+        <!-- Portfolio projects (need to create) -->
 
-        <!-- Portfolio projects -->
-
+        <h3 class="github-link">
+            <a href="https://github.com/williamyap90">My GitHub</a>
+        </h3>
     </section>
 
 
-    <!-- footer -->
-    <footer>
-        <h3 class="contact" id="contact">Get in touch with me</h3>
+    <!-- Footer with social links -->
+    <section class="contact" id="contact">
+        <h3 class="section__title section__title--contact">Contact</h3>
+        <p class="section__subtitle section__subtitle--contact">Connect with me, or send me an email</p>
         <a href="mailto:william.yap90@gmail.com" class="footer-link">william.yap90@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item"><a href="#" class="social__link">Social 1</a></li>
             <li class="social-list__item"><a href="#" class="social__link">Social 1</a></li>
             <li class="social-list__item"><a href="#" class="social__link">Social 1</a></li>
         </ul>
-    </footer>
+        </footer>
 
 </body>
 

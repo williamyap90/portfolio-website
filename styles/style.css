@@ -7,14 +7,14 @@
 /* Setting up custom properties */
 :root {
     /* Custom font family & font weight */
-    --ff-primary: 'Source Code Pro', monospace;
-    --ff-secondary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
     --fw-reg: 300;
     --fw-bold: 900;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --accent: #f08080;
+    --clr-accent: #f08080;
 
     /* Font sizes */
     --fs-h1: 3rem;
@@ -31,7 +31,16 @@
         --fs-h3: 1.75rem;
         --fs-body: 1.125rem;
     }
+    
 }
+
+/* Shrink elements on small screens*/
+@media (max-width:600px) {
+    .logo {
+        width: 250px;
+    }
+}
+
 
 /* General styles */
 
@@ -45,14 +54,80 @@ body {
 
 }
 
+section {
+    padding: 3em 1.5em;
+}
+
 img {
     display: block;
     max-width: 100%;
 }
 
+strong { font-weight: var(--fw-bold) }
+
+
+
 /* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1em;
+    margin: 0;
+}
+
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+
+.section__title {
+    font-size: var(--fs-h1);
+    margin-bottom: 0.1em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong{
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);    
+}
+
+.section__subtitle--intro,
+.section__subtitle--about,
+.section__subtitle--projects,
+.section__subtitle--contact {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    margin-bottom: 1em;
+}
+
+
+/* Header */
+.logo {
+    margin: 0;
+}
+
+
+/* Intro section */
+
+.intro {
+    position: relative;
+}
+
+
+/* About me section */
+
+
+/* Projects section */
+
+
+/* Contact section */
