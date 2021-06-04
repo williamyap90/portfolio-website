@@ -208,12 +208,13 @@ header {
 /* Intro section */
 
 .intro {
-    position: relative;
+
 }
 
 .intro__image {
     max-width: 50%;
 }
+
 
 /* About me section */
 .about-me {
