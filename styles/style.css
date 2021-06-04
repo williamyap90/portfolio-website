@@ -162,6 +162,8 @@ header {
 }
 
 .nav-toggle {
+    top: 0;
+    left: 0;
     display: none;
 }
 
@@ -173,14 +175,22 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1em;
+    margin-left: 1rem;
     height: 100%;
     display: flex;
     align-items: center;
+
     color: var(--clr-light);
     font-weight: var(--fw-bold);
     transform: rotate(-90deg);
     font-size: 1.5em;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label:hover {
+    transform: rotate(90deg);
 }
 
 /* Pending for nav:
