@@ -14,7 +14,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #f08080;
+    --clr-accent: #ffb366;
 
     /* Font sizes */
     --fs-h1: 3rem;
@@ -208,7 +208,7 @@ header {
 /* Intro section */
 
 .intro {
-
+    position: relative;
 }
 
 .intro__image {
