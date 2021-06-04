@@ -109,39 +109,76 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* Header */
+header {
+    width: 100%;
+    background-color: var(--clr-dark);
+    text-align: right;
+    position: fixed;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .logo {
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
+    z-index:1;
+    grid-column: 3 / 3;
 }
 
 
 /* Navigation bar - work in progess*/
 .nav {
-    width: 100%;
     background-color: var(--clr-dark);
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    display: none;
+    border: 1px solid red
 }
 
 .nav__list {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .nav__item {
-    list-style-type: none;
-    margin: 0.5em 3em -0.5em;
-    font-size: 1em;
-    font-family: var(--ff-primary);
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
-.nav__link {
+.nav__link { 
     text-decoration: none;
-    color: white;
-    padding: 13px;
-}
+    color: var(--clr-light);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+} 
+
 
 .nav__link:hover {
-    background-color: var(--clr-accent);
+    background-color: black;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ nav {
+    display:block;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--clr-light);
+    transform: rotate(-90deg);
+    font-size: 1.5em;
 }
 
 
@@ -151,8 +188,28 @@ h3 { font-size: var(--fs-h3) }
     position: relative;
 }
 
+.intro__image {
+    max-width: 50%;
+}
 
 /* About me section */
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 800px) {
+    .about-me__body {
+        display: flex;
+        gap: 2em;
+    }
+    
+    .about-me__body--image {
+        max-width: 70%;
+        height: auto;
+    }
+}
 
 
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
@@ -166,7 +223,7 @@ h3 { font-size: var(--fs-h3) }
 .project__item {
     background: var(--clr-accent);
     padding: 3em;
-    width: 12em;
+    width: 10em;
     height: 8em;
     margin-top: 0.2em;
     margin-bottom: 0.5em;

@@ -17,13 +17,11 @@
 </head>
 
 <body>
-    <header class="header__section">
+    <header>
         <div class="logo">
             <img src="images/logo.png" alt="website logo" width="400">
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -31,8 +29,10 @@
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
-            <hr>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span>|||</span>
+        </label>
     </header>
 
 
@@ -40,7 +40,7 @@
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">Hi, I am <strong>William Yap</strong></h1>
         <p class="section__subtitle section__subtitle--intro">Welcome to my portfolio site.</p>
-        <img src="images/intro.jpg" alt="main background image" class="intro-image">
+        <img src="images/me.jpg" alt="a profile picture of myself" class="intro__image">
     </section>
 
 
@@ -50,15 +50,17 @@
         <p class="section__subtitle section__subtitle--about">Software developer</p>
 
         <div class="about-me__body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderitin voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-        </div>
+            <div class="about-me__body--text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderitin voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.</p>
+            </div>
 
-        <img src="images/me.jpg" alt="my profile picture" class="profile-picture">
+            <img src="images/about.jpg" alt="a photo of me on a cliff edge" class="about-me__body--image">
     </section>
 
 
