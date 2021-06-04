@@ -113,7 +113,8 @@ header {
     width: 100%;
     background-color: var(--clr-dark);
     text-align: right;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,10 +132,9 @@ header {
     width: 100%;
     position: absolute;
     text-align: left;
-    top: 0;
+    top: 100%;
     left: 0;
     display: none;
-    border: 1px solid red
 }
 
 .nav__list {
@@ -177,9 +177,17 @@ header {
     display: flex;
     align-items: center;
     color: var(--clr-light);
+    font-weight: var(--fw-bold);
     transform: rotate(-90deg);
     font-size: 1.5em;
 }
+
+/* Pending for nav:
+- Open hamburger menu on hover 
+- Rotate hamburger on hover
+- Hide hamburger menu on click
+- Change on hover highlighting
+*/
 
 
 /* Intro section */
