@@ -126,7 +126,8 @@ header {
 }
 
 
-/* Navigation bar - work in progess*/
+/* Navigation bar */
+/* Setup for nav appearance*/
 .nav {
     background-color: var(--clr-dark);
     width: 100%;
@@ -161,16 +162,19 @@ header {
     background-color: black;
 }
 
+/* Hidden nav checkbox */
 .nav-toggle {
     top: 0;
     left: 0;
     display: none;
 }
 
+/* Show nav on toggle */
 .nav-toggle:checked ~ nav {
     display:block;
 }
 
+/* Hamburger icon, linked to toggle */
 .nav-toggle-label {
     position: absolute;
     top: 0;
@@ -186,18 +190,18 @@ header {
     font-size: 1.5em;
 
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
-.nav-toggle-label:hover {
-    transform: rotate(90deg);
+.nav-toggle-label:active {
+    transform: rotate(180deg);
 }
 
 /* Pending for nav:
 - Open hamburger menu on hover 
 - Rotate hamburger on hover
 - Hide hamburger menu on click
-- Change on hover highlighting
+- Change nav item on hover highlighting
 */
 
 
