@@ -265,7 +265,7 @@ p + p {
     margin-top: 1.8em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
     .about-me {
         display: grid;
@@ -273,10 +273,10 @@ p + p {
             'title image'
             'subtitle image'
             'content image';
-        grid-column-gap: 5em;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 3fr;
-        padding: 2em 15em 2em;
+        grid-template-rows: 0.1fr 0.1fr 2fr;
+        padding-left: 5em;
+        padding-right: 5em;
     }
 
     .section__title--about {
@@ -291,19 +291,25 @@ p + p {
     
     .about-me__body {
         grid-row: 3;
+        margin-right: 3.5em;
         padding: 1em;
     }
 
     .about-me__body--image {
         grid-row: 3;
-        height: auto;
-        display: inline-block;
-        position: relative;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .about-me {
+        padding-left: 12em;
+        padding-right: 12em;
     }
 }
 
 /* To do for about me:
-- Change layout of about contents
+- Image needs fixing - shrinking when reducing screen size.
 */
 
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
