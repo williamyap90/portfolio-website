@@ -283,7 +283,7 @@ p + p {
 
     .section__subtitle--about {
         grid-row: 2 / 2 ;
-        width: calc(100% + 25.5em);
+        /* width: calc(100% + 25.5em); */
     }
     
     .about-me__body {
@@ -337,6 +337,10 @@ p + p {
     color: var(--clr-light);
 }
 
+/*To do for projects:
+- Redo current flex with grid, create a grid with titles/brief descriptions.
+- Maybe a scrollable grid?
+*/
 
 /* Contact section */
 .contact {
