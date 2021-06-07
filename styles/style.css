@@ -285,7 +285,7 @@ p + p {
 
     .section__subtitle--about {
         grid-row: 2 / 2 ;
-        width: calc(100% + 150em);
+        width: calc(100% + 25.5em);
         position: aboslute;
     }
     
@@ -296,8 +296,7 @@ p + p {
     }
 
     .about-me__body--image {
-        grid-row: 3;
-        width: 100%;
+        grid-row: 1 / 3;
     }
 }
 
