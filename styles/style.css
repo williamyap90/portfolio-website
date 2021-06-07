@@ -229,6 +229,8 @@ header {
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+        margin-top: 8em;
+        margin-bottom: 8em;
     }
 
     .intro__image {
@@ -250,12 +252,13 @@ header {
 }
 /* About me section */
 .about-me {
+    color: var(--clr-light);
     background-color: var(--clr-dark);
     background-image: url(/images/about-bg.jpg);
     background-size: cover;
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     background-size: 100% 100%;
-    color: var(--clr-light);
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 800px) {
@@ -305,7 +308,7 @@ header {
 /* Contact section */
 .contact {
     background-color: var(--clr-dark);
-    background-image: url(/images/contact-bg.jpg);
+    /* background-image: url(/images/contact-bg.jpg); */
     background-size: cover;
     background-blend-mode: multiply;
     background-size: 100% 100%;
