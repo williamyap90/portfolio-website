@@ -297,6 +297,9 @@ p + p {
 
     .about-me__body--image {
         grid-row: 1 / 3;
+        box-shadow: 
+            0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+            0.125em 0.125em 0.25em rgba(0,0,0,0.15);
     }
 }
 
