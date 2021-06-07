@@ -256,26 +256,53 @@ header {
     background-color: var(--clr-dark);
     background-image: url(/images/about-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: multiply;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
+p + p {
+    margin-top: 1.8em;
+}
+
 @media (min-width: 800px) {
-    .about-me__body {
-        display: flex;
-        gap: 2em;
+
+    .about-me {
+        display: grid;
+        grid-template-areas:
+            'title image'
+            'subtitle image'
+            'content image';
+        grid-column-gap: 5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 3fr;
+        padding: 2em 15em 2em;
+    }
+
+    .section__title--about {
+        grid-row: 1 / 2;
+    }
+
+    .section__subtitle--about {
+        grid-row: 2 / 2 ;
+        width: calc(100% + 150em);
+        position: aboslute;
     }
     
+    .about-me__body {
+        grid-row: 3;
+        padding: 1em;
+    }
+
     .about-me__body--image {
-        max-width: 70%;
+        grid-row: 3;
         height: auto;
+        display: inline-block;
+        position: relative;
     }
 }
 
 /* To do for about me:
-- Add background image taking full width
-- Change font colour of About title
 - Change layout of about contents
 */
 
@@ -308,7 +335,7 @@ header {
 /* Contact section */
 .contact {
     background-color: var(--clr-dark);
-    /* background-image: url(/images/contact-bg.jpg); */
+    background-image: url(/images/contact-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     background-size: 100% 100%;
