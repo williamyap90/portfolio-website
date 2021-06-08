@@ -313,60 +313,17 @@ p + p {
 */
 
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
-.projects{
-    display: grid;
-    grid-template-areas: 
-        'title'
-        'subtitle'
-        'projects'
-        'viewProjects'
-        'github';
-    padding-left: 5em;
-    padding-right: 5em;
-}
-
-.section__title--projects{
-    grid-row: 1;
-    text-align: right;
-}
-
-.section__subtitle--projects{
-    grid-row: 2;
-    text-align: right;
-}
-/* .projects__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.project__item {
-    background: var(--clr-accent);
-    padding: 3em;
-    width: 10em;
-    height: 8em;
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
-
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.project__link {
-    text-decoration: none;
-    color: var(--clr-light);
-} */
-
 .github {
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 1.5em;
 }
 
 .github-logo {
     content: url(/images/GitHub-Mark-64px.png);
-     transition: transform 0.7s ease-in-out;
-    
+    max-width: 100%;
+    max-height: 100%;
+    width: min-content;
+    height: min-content;
+    transition: transform 0.7s ease-in-out;
 }
 
 .github-logo:hover {
@@ -375,11 +332,89 @@ p + p {
 
 .view-github {
     content: url(/images/view-github.png);
-    max-height: 4em;
-    margin-top: 0.75em;
-    margin-left: 0.5em;
+    max-width: 100%;
+    max-height: 100%;
+    width: 70%;
+    height: 70%;
 }
 
+@media (min-width: 600px) {
+    .projects{
+        display: grid;
+        grid-template-areas: 
+            'title title'
+            'subtitle subtitle'
+            'projectText projectText'
+            'projects projects'
+            'viewProjects github';
+        padding-left: 5em;
+        padding-right: 5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section__title--projects{
+        grid-column: 2;
+        text-align: right;
+    }
+
+    .section__subtitle--projects{
+        grid-column: 1 / span 2;
+        justify-items: right;
+        text-align: right;
+    }
+
+    .projects__body--text {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        margin-top: -1em;
+        padding: 2em;
+    }
+
+    .projects__list {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+        list-style: none;
+    }
+
+    .all-projects {
+        grid-row: 5;
+        grid-column: 2;
+        text-align: right;
+        margin-top: 1.5em;
+    }
+
+    .github {
+        grid-row: 5;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .github-logo {
+        content: url(/images/GitHub-Mark-64px.png);
+        max-width: 100%;
+        max-height: 100%;
+        width: min-content;
+        height: min-content;
+        transition: transform 0.7s ease-in-out;
+    }
+
+    .github-logo:hover {
+        transform: rotate(360deg);
+    }
+
+    .view-github {
+        content: url(/images/view-github.png);
+        max-width: 100%;
+        max-height: 100%;
+        width: 70%;
+        height: 70%;
+        margin-top: 0.6em;
+        margin-left: 0.6em;
+    }
+}
 
 /*To do for projects:
 - Redo current flex with grid, create a grid with titles/brief descriptions.
