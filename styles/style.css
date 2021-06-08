@@ -226,8 +226,8 @@ header {
         margin: 0 auto;
         grid-column-gap: 2em;
         grid-template-areas: 
-            "img title"
-            "img subtitle";
+            'img title'
+            'img subtitle';
         grid-template-columns: min-content max-content;
         margin-top: 8em;
         margin-bottom: 8em;
@@ -313,7 +313,28 @@ p + p {
 */
 
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
-.projects__list {
+.projects{
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'subtitle'
+        'projects'
+        'viewProjects'
+        'github';
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.section__title--projects{
+    grid-row: 1;
+    text-align: right;
+}
+
+.section__subtitle--projects{
+    grid-row: 2;
+    text-align: right;
+}
+/* .projects__list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -335,16 +356,30 @@ p + p {
 .project__link {
     text-decoration: none;
     color: var(--clr-light);
+} */
+
+.github {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .github-logo {
     content: url(/images/GitHub-Mark-64px.png);
+     transition: transform 0.7s ease-in-out;
+    
+}
+
+.github-logo:hover {
+    transform: rotate(360deg);
 }
 
 .view-github {
     content: url(/images/view-github.png);
     max-height: 4em;
+    margin-top: 0.75em;
+    margin-left: 0.5em;
 }
+
 
 /*To do for projects:
 - Redo current flex with grid, create a grid with titles/brief descriptions.
@@ -365,3 +400,8 @@ p + p {
     color: var(--clr-light);
     
 }
+
+/*To do for contact:
+- pop out text box requesting name/email/message
+- data validation for txt entries
+*/
