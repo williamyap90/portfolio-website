@@ -337,6 +337,15 @@ p + p {
     color: var(--clr-light);
 }
 
+.github-logo {
+    content: url(/images/GitHub-Mark-64px.png);
+}
+
+.view-github {
+    content: url(/images/view-github.png);
+    max-height: 4em;
+}
+
 /*To do for projects:
 - Redo current flex with grid, create a grid with titles/brief descriptions.
 - Maybe a scrollable grid?
