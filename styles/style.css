@@ -298,6 +298,8 @@ p + p {
         box-shadow: 
             0.25em 0.25em 0.75em rgba(0,0,0,0.25),
             0.125em 0.125em 0.25em rgba(0,0,0,0.15);
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -338,6 +340,19 @@ p + p {
     height: 70%;
 }
 
+.all-projects a:link {
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+.all-projects a:visited {
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+.all-projects a:hover {
+    text-decoration: underline;
+}
+
+
 @media (min-width: 600px) {
     .projects{
         display: grid;
@@ -350,6 +365,7 @@ p + p {
         padding-left: 5em;
         padding-right: 5em;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: .1fr .1fr 1fr 2.5fr 0.3fr
     }
 
     .section__title--projects{
@@ -374,6 +390,7 @@ p + p {
         grid-row: 4;
         grid-column: 1 / span 2;
         list-style: none;
+        border: 1px solid red;
     }
 
     .all-projects {
@@ -390,14 +407,13 @@ p + p {
         align-items: center;
         justify-content: center;
         margin-top: 1em;
+        border: 1px solid red;
     }
 
     .github-logo {
         content: url(/images/GitHub-Mark-64px.png);
-        max-width: 100%;
-        max-height: 100%;
-        width: min-content;
-        height: min-content;
+        width: 55px;
+        height: 55px;
         transition: transform 0.7s ease-in-out;
     }
 
@@ -409,8 +425,8 @@ p + p {
         content: url(/images/view-github.png);
         max-width: 100%;
         max-height: 100%;
-        width: 70%;
-        height: 70%;
+        width: 315px;
+        height: auto;
         margin-top: 0.6em;
         margin-left: 0.6em;
     }
@@ -433,7 +449,6 @@ p + p {
 
 .contact-link {
     color: var(--clr-light);
-    
 }
 
 /*To do for contact:
