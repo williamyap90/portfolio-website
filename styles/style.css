@@ -336,8 +336,8 @@ p + p {
     content: url(/images/view-github.png);
     max-width: 100%;
     max-height: 100%;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
 }
 
 .all-projects a:link {
@@ -390,14 +390,13 @@ p + p {
         grid-row: 4;
         grid-column: 1 / span 2;
         list-style: none;
-        border: 1px solid red;
     }
 
     .all-projects {
         grid-row: 5;
         grid-column: 2;
         text-align: right;
-        margin-top: 1.5em;
+        padding-top: 0.7em;
     }
 
     .github {
@@ -405,16 +404,16 @@ p + p {
         grid-column: 1;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-items: start;
         margin-top: 1em;
-        border: 1px solid red;
     }
 
     .github-logo {
         content: url(/images/GitHub-Mark-64px.png);
-        width: 55px;
-        height: 55px;
+        width: 40px;
+        height: 40px;
         transition: transform 0.7s ease-in-out;
+        margin-bottom: 1em;
     }
 
     .github-logo:hover {
@@ -425,10 +424,10 @@ p + p {
         content: url(/images/view-github.png);
         max-width: 100%;
         max-height: 100%;
-        width: 315px;
+        width: 200px;
         height: auto;
-        margin-top: 0.6em;
-        margin-left: 0.6em;
+        margin-bottom: 0.6em;
+        margin-left: 0.3em;
     }
 }
 
@@ -449,6 +448,42 @@ p + p {
 
 .contact-link {
     color: var(--clr-light);
+}
+
+@media (min-width: 600px) {
+    .contact {
+        display: grid;
+        grid-template-areas: 
+            'title contactBox'
+            'subtitle contactBox'
+            'social contactBox';
+        padding-left: 5em;
+        padding-right: 5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section__title--contact {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .section__subtitle--contact {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    .contact-link {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    .social__list {
+        grid-row: 3;
+        grid-column: 1;
+        list-style: none;
+        margin-top: 3em;
+    }
+
 }
 
 /*To do for contact:
