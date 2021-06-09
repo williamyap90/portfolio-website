@@ -454,12 +454,13 @@ p + p {
     .contact {
         display: grid;
         grid-template-areas: 
-            'title contactBox'
-            'subtitle contactBox'
-            'social contactBox';
+            'title . . contactBox'
+            'subtitle subtitle arrow contactBox'
+            'text text arrow contactBox'
+            'social social contactBox';
         padding-left: 5em;
         padding-right: 5em;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
     }
 
     .section__title--contact {
@@ -478,12 +479,25 @@ p + p {
     }
     
     .social__list {
-        grid-row: 3;
-        grid-column: 1;
+        grid-row: 4;
+        grid-column: 1 / span 2;
         list-style: none;
-        margin-top: 3em;
     }
 
+    .arrow__right {
+        grid-row: 1 / span 2;
+        grid-column: 3;
+        width: 0; 
+        height: 0; 
+        border-top: 100px solid transparent;
+        border-left: 100px solid var(--clr-accent);
+        margin-top: 2.1em;
+    }
+
+    .contact__form {
+        grid-row: 2 / span 4;
+        grid-column: 4;
+    }
 }
 
 /*To do for contact:
