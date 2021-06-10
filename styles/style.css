@@ -316,7 +316,49 @@ p + p {
     text-decoration: underline;
 }
 
-/* Horizontal scroll wrapper for projects section*/
+
+@media (min-width: 600px) {
+    .projects{
+        display: grid;
+        grid-template-areas: 
+            'title title'
+            'subtitle subtitle'
+            'projectText projectText'
+            'projects projects'
+            '. allProjects';
+        padding-left: 5em;
+        padding-right: 5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 2.5fr 0.3fr
+    }
+
+    .section__title--projects{
+        grid-area: title;
+        text-align: right;
+    }
+
+    .section__subtitle--projects{
+        grid-area: subtitle;
+        justify-items: right;
+        text-align: right;
+    }
+
+    .projects__body--text {
+        grid-area: projectText;
+        padding: 1em;
+    }
+
+    .projects__list-wrapper {
+        grid-area: projects;
+    }
+
+    .all-projects {
+        grid-area: allProjects;
+        text-align: right;
+        padding-top: 0.7em;
+    }
+
+    /* Horizontal scroll wrapper for projects section*/
 .projects__list-wrapper {
     display: grid;
     grid-template-areas:
@@ -325,18 +367,26 @@ p + p {
         'desc1 desc2 desc3 desc4 desc5';
     grid-gap: 10px;
     grid-template-columns: repeat(5, calc(50% - 40px));
-    grid-template-rows: 1fr 5.5fr 1.5fr;
+    /* grid-template-rows: 1fr 4fr 1fr; */
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
     text-align: center;
+    column-gap: 1.5em;
 }
 
 /* General settings for image */
+.project__item--title {
+    align-self: center;
+    padding: 0.5em;
+}
 .project__item--image {
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+.project__item--desc {
+    text-align: left;
+    padding: 0.5em 1em 0.5em;
 }
 
 /* Project 1 */
@@ -349,8 +399,6 @@ p + p {
 }
 .project__item--desc1 {
     grid-area: desc1;
-    overflow-y: initial;
-    overflow-x: initial;
 }
 
 /* Project 2 */
@@ -400,52 +448,10 @@ p + p {
 .project__item--desc5 {
     grid-area: desc5;
 }
-
-@media (min-width: 600px) {
-    .projects{
-        display: grid;
-        grid-template-areas: 
-            'title title'
-            'subtitle subtitle'
-            'projectText projectText'
-            'projects projects'
-            '. allProjects';
-        padding-left: 5em;
-        padding-right: 5em;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 2.5fr 0.3fr
-    }
-
-    .section__title--projects{
-        grid-area: title;
-        text-align: right;
-    }
-
-    .section__subtitle--projects{
-        grid-area: subtitle;
-        justify-items: right;
-        text-align: right;
-    }
-
-    .projects__body--text {
-        grid-area: projectText;
-        padding: 1em;
-    }
-
-    .projects__list-wrapper {
-        grid-area: projects;
-    }
-
-    .all-projects {
-        grid-area: allProjects;
-        text-align: right;
-        padding-top: 0.7em;
-    }
 }
 
 /*To do for projects:
-- Redo current flex with grid, create a grid with titles/brief descriptions.
-- Maybe a scrollable grid?
+- Projects section for media small screens
 */
 
 /* Contact section */
