@@ -304,10 +304,6 @@ p + p {
     }
 }
 
-/* To do for about me:
-- Zoom in image, to avoid stretch
-*/
-
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
 .all-projects a:link {
     color: var(--clr-dark);
