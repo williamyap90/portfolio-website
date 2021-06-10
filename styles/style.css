@@ -215,8 +215,9 @@ header {
 }
 
 .intro__image {
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
-                0.125em 0.125em 0.25em rgba(0,0,0,0.15);
+    box-shadow: 
+        0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,0.15);
 }
 
 @media (min-width: 600px) {
@@ -379,11 +380,15 @@ p + p {
 .project__item--title {
     align-self: center;
     padding: 0.5em;
+    font-weight: var(--fw-bold)
 }
 .project__item--image {
     object-fit: cover;
     width: 100%;
     height: auto;
+    box-shadow: 
+        0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+        0.125em 0.125em 0.5em rgba(0,0,0,0.15);
 }
 .project__item--desc {
     text-align: left;
@@ -469,29 +474,28 @@ p + p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1em 0;
 }
 
 .email-logo {
     content: url(/images/email.png);
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 50%;
+    max-height: 50%;
     width: min-content;
     height: min-content;
 }
 
 .github-logo {
     content: url(/images/GitHub-Mark-64px.png);
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
     width: min-content;
     height: min-content;
 }
 
 .linkedin-logo {
     content: url(/images/LI-In-Bug.png);
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
     width: min-content;
     height: min-content;
 }
@@ -500,13 +504,11 @@ p + p {
     .contact {
         display: grid;
         grid-template-areas: 
-            'title . . contactBox'
-            'subtitle subtitle arrow contactBox'
-            'text text arrow contactBox'
-            'social social contactBox';
+            'title . .'
+            'subtitle arrow social';
         padding-left: 5em;
         padding-right: 5em;
-        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+        grid-template-columns: 1fr 0.2fr 0.5fr;
     }
 
     .section__title--contact {
@@ -516,37 +518,31 @@ p + p {
 
     .section__subtitle--contact {
         grid-row: 2;
-        grid-column: 1 / span 2;
+        grid-column: 1;
     }
 
-    .contact__body--text {
-        grid-row: 3;
-        grid-column: 1/ span 2;
-        padding: 1em;
-    }
-    
     .arrow__right {
-        grid-row: 1 / span 2;
-        grid-column: 3;
-        width: 0; 
-        height: 0; 
-        border-top: 80px solid transparent;
-        border-left: 100px solid var(--clr-accent);
-        margin-top: 3.2em;
-        position: relative;
+        display: none;
     }
 
     .contact__socials {
-        grid-row: 4;
-        grid-column: 1;
         display: flex;
         align-items: center;
-        justify-items: start;
+        justify-content: space-evenly;
+        grid-row: 2;
+        grid-column: 3;
+        margin-top: -1.5em;
     }
 
-    .email-logo,
+    .email-logo {
+        max-width: 75%;
+        max-height: 75%;
+        transition: transform 0.5s ease-in-out;
+    }
     .github-logo,
     .linkedin-logo {
+        max-width: 80%;
+        max-height: 80%;
         transition: transform 0.5s ease-in-out;
     }
 
@@ -558,14 +554,42 @@ p + p {
     .github-logo:hover {
         transform: rotate(-360deg);
     }
-
-    .contact__form {
-        grid-row: 2 / span 4;
-        grid-column: 4;
-    }
 }
 
-/*To do for contact:
-- pop out text box requesting name/email/message
-- data validation for txt entries
-*/
+@media (min-width: 1200px) {
+    .arrow__right {
+        grid-row: 1 / span 2;
+        grid-column: 2;
+        width: 0; 
+        height: 0; 
+        border-top: 80px solid transparent;
+        border-left: 100px solid var(--clr-accent);
+        margin-top: 3.2em;
+        position: relative;
+        display:inline;
+    }
+
+    .contact__socials {
+        grid-row: 2;
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -2em;
+    }
+
+    .email-logo {
+        max-width: 80%;
+        max-height: 80%;
+        width: min-content;
+        height: min-content;   
+    }
+
+    .github-logo,
+    .linkedin-logo {
+        max-width: 100%;
+        max-height: 100%;
+        width: min-content;
+        height: min-content;
+    }    
+}
