@@ -329,7 +329,7 @@ p + p {
         padding-left: 5em;
         padding-right: 5em;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 2.5fr 0.3fr
+        grid-template-rows: 0.1fr 0.1fr 0.2r 2fr 0.2fr
     }
 
     .section__title--projects{
@@ -346,6 +346,7 @@ p + p {
     .projects__body--text {
         grid-area: projectText;
         padding: 1em;
+        margin-top: -0.5em;
     }
 
     .projects__list-wrapper {
@@ -355,7 +356,7 @@ p + p {
     .all-projects {
         grid-area: allProjects;
         text-align: right;
-        padding-top: 0.7em;
+        padding-top: 1.5em;
     }
 
     /* Horizontal scroll wrapper for projects section*/
