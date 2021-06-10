@@ -316,6 +316,14 @@ p + p {
     text-decoration: underline;
 }
 
+.projects__list {
+    display: grid;
+    grid-template-areas:
+        'title title title title'
+        'img img img img'
+        'desc desc desc desc';
+    border: 1px solid red;
+}
 
 @media (min-width: 600px) {
     .projects{
@@ -351,7 +359,6 @@ p + p {
 
     .projects__list {
         grid-area: projects;
-        list-style: none;
     }
 
     .all-projects {
