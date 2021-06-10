@@ -270,7 +270,7 @@ p + p {
         grid-template-areas:
             'title image'
             'subtitle image'
-            'content image';
+            'aboutText image';
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 0.1fr 0.8fr;
         padding-left: 5em;
@@ -287,14 +287,15 @@ p + p {
     }
     
     .about-me__body {
-        grid-area: content;
-        margin-right: 3.5em;
+        grid-area: aboutText;
         padding: 2em;
+        margin-right: 1em;
     }
 
     .about-me__body--image {
         grid-area: image;
         justify-self: center;
+        object-fit: cover;
         box-shadow: 
             0.25em 0.25em 0.75em rgba(0,0,0,0.25),
             0.125em 0.125em 0.25em rgba(0,0,0,0.15);
