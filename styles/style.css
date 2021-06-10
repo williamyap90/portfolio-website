@@ -316,13 +316,89 @@ p + p {
     text-decoration: underline;
 }
 
-.projects__list {
+/* Horizontal scroll wrapper for projects section*/
+.projects__list-wrapper {
     display: grid;
     grid-template-areas:
-        'title title title title'
-        'img img img img'
-        'desc desc desc desc';
-    border: 1px solid red;
+        't1 t2 t3 t4 t5'
+        'img1 img2 img3 img4 img5'
+        'desc1 desc2 desc3 desc4 desc5';
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, calc(50% - 40px));
+    grid-template-rows: 1fr 5.5fr 1.5fr;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* General settings for image */
+.project__item--image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Project 1 */
+.project__item--title1 {
+    grid-area: t1;
+}
+.project__item--image1 {
+    grid-area: img1;
+    content: url(/images/projects/temp.jpg);
+}
+.project__item--desc1 {
+    grid-area: desc1;
+    overflow-y: initial;
+    overflow-x: initial;
+}
+
+/* Project 2 */
+.project__item--title2 {
+    grid-area: t2;
+}
+.project__item--image2 {
+    grid-area: img2;
+    content: url(/images/projects/temp.jpg);
+}
+.project__item--desc2 {
+    grid-area: desc2;
+}
+
+/* Project 3 */
+.project__item--title3 {
+    grid-area: t3;
+}
+.project__item--image3 {
+    grid-area: img3;
+    content: url(/images/projects/temp.jpg);
+}
+.project__item--desc3 {
+    grid-area: desc3;
+}
+
+/* Project 4 */
+.project__item--title4 {
+    grid-area: t4;
+}
+.project__item--image4 {
+    grid-area: img4;
+    content: url(/images/projects/temp.jpg);
+}
+.project__item--desc4 {
+    grid-area: desc4;
+}
+
+/* Project 5 */
+.project__item--title5 {
+    grid-area: t5;
+}
+.project__item--image5 {
+    grid-area: img5;
+    content: url(/images/projects/temp.jpg);
+}
+.project__item--desc5 {
+    grid-area: desc5;
 }
 
 @media (min-width: 600px) {
@@ -353,11 +429,10 @@ p + p {
 
     .projects__body--text {
         grid-area: projectText;
-        margin: -1em;
-        padding: 2em;
+        padding: 1em;
     }
 
-    .projects__list {
+    .projects__list-wrapper {
         grid-area: projects;
     }
 
