@@ -315,31 +315,6 @@ p + p {
 */
 
 /* Projects section - Temporary: Work in progress. Create responsive where images enlarge with size.*/
-.github {
-    margin-top: 1.5em;
-}
-
-.github-logo {
-    content: url(/images/GitHub-Mark-64px.png);
-    max-width: 100%;
-    max-height: 100%;
-    width: min-content;
-    height: min-content;
-    transition: transform 0.7s ease-in-out;
-}
-
-.github-logo:hover {
-    transform: rotate(360deg);
-}
-
-.view-github {
-    content: url(/images/view-github.png);
-    max-width: 100%;
-    max-height: 100%;
-    width: 50%;
-    height: 50%;
-}
-
 .all-projects a:link {
     color: var(--clr-dark);
     text-decoration: none;
@@ -398,37 +373,6 @@ p + p {
         text-align: right;
         padding-top: 0.7em;
     }
-
-    .github {
-        grid-row: 5;
-        grid-column: 1;
-        display: flex;
-        align-items: center;
-        justify-items: start;
-        margin-top: 1em;
-    }
-
-    .github-logo {
-        content: url(/images/GitHub-Mark-64px.png);
-        width: 40px;
-        height: 40px;
-        transition: transform 0.7s ease-in-out;
-        margin-bottom: 1em;
-    }
-
-    .github-logo:hover {
-        transform: rotate(360deg);
-    }
-
-    .view-github {
-        content: url(/images/view-github.png);
-        max-width: 100%;
-        max-height: 100%;
-        width: 200px;
-        height: auto;
-        margin-bottom: 0.6em;
-        margin-left: 0.3em;
-    }
 }
 
 /*To do for projects:
@@ -446,8 +390,35 @@ p + p {
     color: var(--clr-light);
 }
 
-.contact-link {
-    color: var(--clr-light);
+.contact__socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.email-logo {
+    content: url(/images/email.png);
+    max-width: 80%;
+    max-height: 80%;
+    width: min-content;
+    height: min-content;
+}
+
+.github-logo {
+    content: url(/images/GitHub-Mark-64px.png);
+    max-width: 100%;
+    max-height: 100%;
+    width: min-content;
+    height: min-content;
+}
+
+.linkedin-logo {
+    content: url(/images/LI-In-Bug.png);
+    max-width: 100%;
+    max-height: 100%;
+    width: min-content;
+    height: min-content;
 }
 
 @media (min-width: 600px) {
@@ -473,17 +444,12 @@ p + p {
         grid-column: 1 / span 2;
     }
 
-    .contact-link {
+    .contact__body--text {
         grid-row: 3;
-        grid-column: 1;
+        grid-column: 1/ span 2;
+        padding: 1em;
     }
     
-    .social__list {
-        grid-row: 4;
-        grid-column: 1 / span 2;
-        list-style: none;
-    }
-
     .arrow__right {
         grid-row: 1 / span 2;
         grid-column: 3;
@@ -493,6 +459,29 @@ p + p {
         border-left: 100px solid var(--clr-accent);
         margin-top: 2.1em;
         position: relative;
+    }
+
+    .contact__socials {
+        grid-row: 4;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-items: start;
+    }
+
+    .email-logo,
+    .github-logo,
+    .linkedin-logo {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .email-logo:hover,
+    .linkedin-logo:hover {
+        transform: rotate(360deg);
+    }
+
+    .github-logo:hover {
+        transform: rotate(-360deg);
     }
 
     .contact__form {
