@@ -492,6 +492,7 @@ p + p {
         border-top: 100px solid transparent;
         border-left: 100px solid var(--clr-accent);
         margin-top: 2.1em;
+        position: relative;
     }
 
     .contact__form {
