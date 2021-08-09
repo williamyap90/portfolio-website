@@ -1,152 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>William Yap: My Portfolio</title>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="website logo" width="400">
-        </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span>|||</span>
+      <div class="logo">
+        <img src="images/logo.png" alt="website logo" width="350" />
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="myFunction(this)">
+        <label for="nav-toggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </label>
+      </div>
     </header>
-
 
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">Hi, I am <strong>William Yap</strong></h1>
-        <p class="section__subtitle section__subtitle--intro">Welcome to my portfolio site.</p>
-        <img src="images/me.jpg" alt="a profile picture of myself" class="intro__image">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>William Yap</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Welcome to my portfolio site.
+      </p>
+      <img
+        src="images/me.jpg"
+        alt="a profile picture of myself"
+        class="intro__image"
+      />
     </section>
-
 
     <!-- About me -->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">About me</h2>
-        <p class="section__subtitle section__subtitle--about">Software developer</p>
+      <h2 class="section__title section__title--about">About me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Software developer
+      </p>
 
-        <div class="about-me__body">
-            <div class="about-me__body--text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderitin voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ducimus dolor nisi mollitia
-                    officiis ut provident nam obcaecati, dolorum quas consequuntur minus voluptas possimus asperiores
-                    aperiam placeat officia, aliquid debitis.</p>
-            </div>
+      <div class="about-me__body">
+        <div class="about-me__body--text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderitin voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            ducimus dolor nisi mollitia officiis ut provident nam obcaecati,
+            dolorum quas consequuntur minus voluptas possimus asperiores aperiam
+            placeat officia, aliquid debitis.
+          </p>
         </div>
-        <img src="images/about.jpg" alt="a photo of me on a cliff edge" class="about-me__body--image">
+      </div>
+      <img
+        src="images/about.jpg"
+        alt="a photo of me on a cliff edge"
+        class="about-me__body--image"
+      />
     </section>
-
 
     <!-- Projects -->
     <section class="projects" id="projects">
-        <h2 class="section__title section__title--projects">Projects</h2>
-        <p class="section__subtitle section__subtitle--projects">Here is some of my work</p>
-        <p class="projects__body--text">Some sort of grid to display projects with brief description will be added here.
-            Possibly a separate page for
-            each project showing a more indepth description and/or code. Use flexbox to create layout.</p>
+      <h2 class="section__title section__title--projects">Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">
+        Here is some of my work
+      </p>
+      <p class="projects__body--text">
+        Some sort of grid to display projects with brief description will be
+        added here. Possibly a separate page for each project showing a more
+        indepth description and/or code. Use flexbox to create layout.
+      </p>
 
-        <div class="projects__list-wrapper">
+      <div class="projects__list-wrapper">
+        <div class="project__item--title project__item--title1">Project 1</div>
+        <a href="#" class="project__item--link">
+          <div class="project__item--image project__item--image1"></div>
+        </a>
+        <p class="project__item--desc project__item--desc1">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
+        </p>
 
-            <div class="project__item--title project__item--title1">Project 1</div>
-            <a href="#" class="project__item--link">
-                <div class="project__item--image project__item--image1"></div>
-            </a>
-            <p class="project__item--desc project__item--desc1">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Distinctio ducimus dolor nisi mollitia officiis ut provident nam obcaecati.</p>
+        <div class="project__item--title project__item--title2">Project 2</div>
+        <a href="#" class="project__item--link">
+          <div class="project__item--image project__item--image2"></div>
+        </a>
+        <p class="project__item--desc project__item--desc2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
+        </p>
 
-            <div class="project__item--title project__item--title2">Project 2</div>
-            <a href="#" class="project__item--link">
-                <div class="project__item--image project__item--image2"></div>
-            </a>
-            <p class="project__item--desc project__item--desc2">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Distinctio ducimus dolor nisi mollitia officiis ut provident nam obcaecati.</p>
+        <div class="project__item--title project__item--title3">Project 3</div>
+        <a href="#" class="project__item--link">
+          <div class="project__item--image project__item--image3"></div>
+        </a>
+        <p class="project__item--desc project__item--desc3">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
+        </p>
 
-            <div class="project__item--title project__item--title3">Project 3</div>
-            <a href="#" class="project__item--link">
-                <div class="project__item--image project__item--image3"></div>
-            </a>
-            <p class="project__item--desc project__item--desc3">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Distinctio ducimus dolor nisi mollitia officiis ut provident nam obcaecati.</p>
+        <div class="project__item--title project__item--title4">Project 4</div>
+        <a href="#" class="project__item--link">
+          <div class="project__item--image project__item--image4"></div>
+        </a>
+        <p class="project__item--desc project__item--desc4">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
+        </p>
 
-            <div class="project__item--title project__item--title4">Project 4</div>
-            <a href="#" class="project__item--link">
-                <div class="project__item--image project__item--image4"></div>
-            </a>
-            <p class="project__item--desc project__item--desc4">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Distinctio ducimus dolor nisi mollitia officiis ut provident nam obcaecati.</p>
+        <div class="project__item--title project__item--title5">Project 5</div>
+        <a href="#" class="project__item--link">
+          <div class="project__item--image project__item--image5"></div>
+        </a>
+        <p class="project__item--desc project__item--desc5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
+        </p>
+      </div>
 
-            <div class="project__item--title project__item--title5">Project 5</div>
-            <a href="#" class="project__item--link">
-                <div class="project__item--image project__item--image5"></div>
-            </a>
-            <p class="project__item--desc project__item--desc5">Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Distinctio ducimus dolor nisi mollitia officiis ut provident nam obcaecati.</p>
-        </div>
-
-        <h3 class="all-projects">
-            <a href="/projects.html">All projects</a>
-        </h3>
+      <h3 class="all-projects">
+        <a href="/projects.html">All projects</a>
+      </h3>
     </section>
-
 
     <!-- Footer with social links -->
     <section class="contact" id="contact">
-        <h3 class="section__title section__title--contact">Contact</h3>
-        <p class="section__subtitle section__subtitle--contact">Connect with me</p>
-        <div class="arrow__right"></div>
+      <h3 class="section__title section__title--contact">Contact</h3>
+      <p class="section__subtitle section__subtitle--contact">
+        Connect with me
+      </p>
+      <div class="arrow__right"></div>
 
-        <div class="contact__socials">
-            <a href="mailto:william.yap90@gmail.com">
-                <div class="email">
-                    <div class="email-logo"></div>
-                </div>
-            </a>
+      <div class="contact__socials">
+        <a href="mailto:william.yap90@gmail.com">
+          <div class="email">
+            <div class="email-logo"></div>
+          </div>
+        </a>
 
-            <a href="https://github.com/williamyap90">
-                <div class="github">
-                    <div class="github-logo"></div>
-                </div>
-            </a>
+        <a href="https://github.com/williamyap90">
+          <div class="github">
+            <div class="github-logo"></div>
+          </div>
+        </a>
 
-            <a href="https://linkedin.com/in/william--yap">
-                <div class="linkedin">
-                    <div class="linkedin-logo"></div>
-                </div>
-            </a>
-
-        </div>
+        <a href="https://linkedin.com/in/william--yap">
+          <div class="linkedin">
+            <div class="linkedin-logo"></div>
+          </div>
+        </a>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
