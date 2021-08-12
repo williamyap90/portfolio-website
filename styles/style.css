@@ -225,7 +225,7 @@ header {
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .intro {
     display: grid;
     width: min-content;
@@ -245,6 +245,10 @@ header {
     position: relative;
   }
 
+  .section__title {
+    grid-area: title;
+  }
+
   .section__subtitle--intro {
     grid-column: -1 / 1;
     grid-row: 2;
@@ -254,6 +258,18 @@ header {
     width: calc(100% + 7.5em);
   }
 }
+
+@media (max-width: 500px) {
+  .section__subtitle {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .section__subtitle {
+    font-size: 1rem;
+  }
+}
+
 /* About me section */
 .about-me {
   color: var(--clr-light);
@@ -481,7 +497,7 @@ p + p {
   width: 60%; /* Full-width */
   background-color: black; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
-  margin-top: -1.5em;
+  margin-top: -1em;
 }
 
 .icon-bar a {
@@ -508,128 +524,16 @@ p + p {
   margin-top: -0.7em;
 }
 
-@media (min-width: 600px) {
-  /* .contact {
-    display: grid;
-    grid-template-areas:
-      "title . ."
-      "subtitle arrow social";
-    padding-left: 10em;
-    padding-right: 10em;
-    grid-template-columns: 1fr 0.2fr 0.5fr;
-    display: flex;
-  } */
-
-  /* .section__title--contact {
-    grid-row: 1;
-    grid-column: 1;
+@media (max-width: 700px) {
+  .icon-bar {
+    width: 80%; /* Full-width */
+    margin-top: -1em;
   }
-
-  .section__subtitle--contact {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .arrow__right {
-    display: none;
-  } */
-
-  /* .contact__socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-row: 2;
-    grid-column: 3;
-    margin-top: -1.5em;
-  }
-
-  .email-logo {
-    max-width: 75%;
-    max-height: 75%;
-  }
-  .github-logo,
-  .linkedin-logo {
-    max-width: 80%;
-    max-height: 80%;
-  }
-
-  .email-logo:hover,
-  .github-logo:hover,
-  .linkedin-logo:hover {
-    animation: shake 0.5s;
-    opacity: 0.85;
-  }
-  @keyframes shake {
-    0% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-      transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
-  } */
 }
 
-@media (min-width: 1400px) {
-  /* .arrow__right {
-    grid-row: 1 / span 2;
-    grid-column: 2;
-    width: 0;
-    height: 0;
-    border-top: 80px solid transparent;
-    border-left: 100px solid var(--clr-accent);
-    margin-top: 3.2em;
-    position: relative;
-    display: inline;
+@media (max-width: 500px) {
+  .icon-bar {
+    width: 90%; /* Full-width */
+    margin-top: -1em;
   }
-
-  .contact__socials {
-    grid-row: 2;
-    grid-column: 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: -2em;
-  }
-
-  .email-logo {
-    max-width: 80%;
-    max-height: 80%;
-    width: min-content;
-    height: min-content;
-  }
-
-  .github-logo,
-  .linkedin-logo {
-    max-width: 100%;
-    max-height: 100%;
-    width: min-content;
-    height: min-content;
-  } */
 }
