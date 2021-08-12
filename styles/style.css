@@ -121,6 +121,7 @@ header {
   z-index: 999;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .logo {
@@ -162,7 +163,7 @@ header {
 }
 
 .nav__link:hover {
-  background-color: black;
+  text-decoration-line: underline;
 }
 
 /* Hidden nav checkbox */
@@ -182,8 +183,7 @@ header {
   display: block;
   position: absolute;
   cursor: pointer;
-  margin-left: 3em;
-  padding: 0.7em;
+  margin-left: 1em;
 }
 .bar1,
 .bar2,
