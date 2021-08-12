@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>William Yap: My Portfolio</title>
     <script src="scripts/script.js"></script>
@@ -19,7 +23,9 @@
   <body>
     <header class="header_main">
       <div class="logo">
-        <img src="images/logo.png" alt="website logo" width="350" />
+        <a href="https:/williamyap.me"
+          ><img src="images/logo.png" alt="website logo" width="350"
+        /></a>
       </div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav class="nav">
@@ -38,9 +44,11 @@
       </nav>
       <div class="hamburger" onclick="myFunction(this)">
         <label for="nav-toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+          <div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </label>
       </div>
     </header>
@@ -164,23 +172,18 @@
       </p>
       <div class="arrow__right"></div>
 
-      <div class="contact__socials">
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
         <a href="mailto:william.yap90@gmail.com">
-          <div class="email">
-            <div class="email-logo"></div>
-          </div>
+          <i class="fa fa-envelope"></i>
         </a>
 
         <a href="https://github.com/williamyap90">
-          <div class="github">
-            <div class="github-logo"></div>
-          </div>
+          <i class="fa fa-github"></i>
         </a>
 
         <a href="https://linkedin.com/in/william--yap">
-          <div class="linkedin">
-            <div class="linkedin-logo"></div>
-          </div>
+          <i class="fa fa-linkedin"></i>
         </a>
       </div>
     </section>
