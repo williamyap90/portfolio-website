@@ -276,6 +276,7 @@ header {
   background-color: var(--clr-dark);
   background-image: url(/images/about-bg.jpg);
   background-size: cover;
+  background-position: left top;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
 }
