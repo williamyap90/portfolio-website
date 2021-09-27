@@ -404,7 +404,7 @@ p + p {
         width: 100%;
         height: auto;
         transition: 0.5s ease;
-        border: 1px solid var(--clr-dark);
+        border: 2px solid var(--clr-dark);
     }
 
     .project__item--image:hover {
