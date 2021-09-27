@@ -334,6 +334,9 @@ p + p {
 .all-projects a:hover {
     text-decoration: underline;
 }
+.all-projects {
+    display: none;
+}
 
 @media (min-width: 600px) {
     .projects {
@@ -426,7 +429,7 @@ p + p {
     }
     .project__item--image1 {
         grid-area: img1;
-        content: url(/images/projects/temp.jpg);
+        content: url(/images/projects/just-choose.jpg);
     }
     .project__item--desc1 {
         grid-area: desc1;
