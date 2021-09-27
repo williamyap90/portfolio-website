@@ -384,12 +384,12 @@ p + p {
     .projects__list-wrapper {
         display: grid;
         grid-template-areas:
-            't1 t2 t3 t4 t5'
-            'img1 img2 img3 img4 img5'
-            'links1 links2 links3 links4 links5'
-            'desc1 desc2 desc3 desc4 desc5';
+            't1 t2 t3'
+            'img1 img2 img3 '
+            'links1 links2 links3'
+            'desc1 desc2 desc3';
         grid-gap: 10px;
-        grid-template-columns: repeat(5, calc(50% - 40px));
+        grid-template-columns: repeat(3, calc(50% - 40px));
         /* grid-template-rows: 1fr 4fr 1fr; */
         overflow-x: scroll;
         overflow-y: hidden;
