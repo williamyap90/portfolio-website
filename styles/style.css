@@ -386,6 +386,7 @@ p + p {
         grid-template-areas:
             't1 t2 t3 t4 t5'
             'img1 img2 img3 img4 img5'
+            'links1 links2 links3 links4 links5'
             'desc1 desc2 desc3 desc4 desc5';
         grid-gap: 10px;
         grid-template-columns: repeat(5, calc(50% - 40px));
@@ -423,6 +424,11 @@ p + p {
     .project__item--title {
         font-size: var(--fs-h3);
     }
+    .project__item--links {
+        margin-top: 1em;
+        margin-bottom: -0.55em;
+    }
+
     /* Project 1 */
     .project__item--title1 {
         grid-area: t1;
@@ -433,6 +439,9 @@ p + p {
     }
     .project__item--desc1 {
         grid-area: desc1;
+    }
+    .project__item--links1 {
+        grid-area: links1;
     }
 
     /* Project 2 */
@@ -446,6 +455,9 @@ p + p {
     .project__item--desc2 {
         grid-area: desc2;
     }
+    .project__item--links2 {
+        grid-area: links2;
+    }
 
     /* Project 3 */
     .project__item--title3 {
@@ -457,6 +469,9 @@ p + p {
     }
     .project__item--desc3 {
         grid-area: desc3;
+    }
+    .project__item--links3 {
+        grid-area: links3;
     }
 
     /* Project 4 */
@@ -470,6 +485,9 @@ p + p {
     .project__item--desc4 {
         grid-area: desc4;
     }
+    .project__item--links4 {
+        grid-area: links4;
+    }
 
     /* Project 5 */
     .project__item--title5 {
@@ -481,6 +499,9 @@ p + p {
     }
     .project__item--desc5 {
         grid-area: desc5;
+    }
+    .project__item--links5 {
+        grid-area: links5;
     }
 }
 
