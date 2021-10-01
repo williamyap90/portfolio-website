@@ -107,7 +107,8 @@ html {
 .section__subtitle--intro,
 .section__subtitle--about,
 .section__subtitle--projects,
-.section__subtitle--contact {
+.section__subtitle--contact,
+.section__subtitle--tech {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     font-weight: var(--fw-reg);
@@ -510,10 +511,65 @@ p + p {
     }
 }
 
-/*To do for projects:
-- Projects section for media small screens
-*/
+/* Tech */
+.tech {
+    color: var(--clr-light);
+    background-color: rgba(12, 12, 12, 0.961);
+    background-image: url(/images/about-bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+/* .languages--container {
+    display: flex;
+    justify-content: space-between;
+} */
 
+/* .all-tech--container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 8em;
+} */
+/* .tech--container {
+    display: flex;
+} */
+.tech__body--item-container {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: -0.25em;
+}
+.tech__body--item-container > p {
+    justify-self: center;
+    align-self: center;
+}
+.tech__icon {
+    align-self: center;
+    height: 45px;
+    width: 45px;
+    margin-right: 1em;
+}
+.tech__icon1 {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 1em;
+}
+.tech__icon2 {
+    align-self: center;
+    height: 38px;
+    width: 38px;
+    margin-right: 1em;
+}
+@media screen and (min-width: 900px) {
+    .tech {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .tech__body {
+        padding: 2em;
+    }
+}
 /* Contact section */
 .contact {
     background-color: black;
