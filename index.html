@@ -1,191 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-    <title>William Yap: My Portfolio</title>
-    <script src="scripts/script.js"></script>
-  </head>
+        <title>William Yap: My Portfolio</title>
+        <script src="scripts/script.js"></script>
+    </head>
 
-  <body>
-    <header class="header_main">
-      <div class="logo">
-        <a href="https:/williamyap.me"
-          ><img src="images/logo.png" alt="website logo" width="350"
-        /></a>
-      </div>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#projects" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger" onclick="myFunction(this)">
-        <label for="nav-toggle">
-          <div>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </label>
-      </div>
-    </header>
+    <body>
+        <header class="header_main">
+            <div class="logo">
+                <a href="https:/williamyap.me"
+                    ><img src="images/logo.png" alt="website logo" width="350"
+                /></a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="myFunction(this)">
+                <label for="nav-toggle">
+                    <div>
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </label>
+            </div>
+        </header>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>William Yap</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        Welcome to my portfolio site.
-      </p>
-      <img
-        src="images/me.jpg"
-        alt="a profile picture of myself"
-        class="intro__image"
-      />
-    </section>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>William Yap</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+                Welcome to my portfolio site.
+            </p>
+            <img
+                src="images/me.jpg"
+                alt="a profile picture of myself"
+                class="intro__image"
+            />
+        </section>
 
-    <!-- About me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">About me</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Software developer
-      </p>
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About me</h2>
+            <p class="section__subtitle section__subtitle--about">
+                Software developer
+            </p>
 
-      <div class="about-me__body">
-        <div class="about-me__body--text">
-          <p>
-            Having worked over 10 years in retail/operations management I’m
-            currently retraining at Northcoders to pursue a career as a software
-            developer.
-          </p>
-          <p>
-            I gained the experience of building an online business for a local
-            bricks & mortar retail store - from selling a single pair of jeans
-            on eBay, to expanding onto multiple sales channels with global
-            fulfilment including manufacturing products on a large scale - this
-            experience combined with my eagerness to learn sparked a desire to
-            innovate and problem solve, the transition to a career in technology
-            is perfect for me to explore these passions further.
-          </p>
-        </div>
-      </div>
-      <img
-        src="images/about.jpg"
-        alt="a photo of me on a cliff edge"
-        class="about-me__body--image"
-      />
-    </section>
+            <div class="about-me__body">
+                <div class="about-me__body--text">
+                    <p>
+                        Having worked over 10 years in retail/operations
+                        management I’m currently retraining at Northcoders to
+                        pursue a career as a software developer.
+                    </p>
+                    <p>
+                        I gained the experience of building an online business
+                        for a local bricks & mortar retail store - from selling
+                        a single pair of jeans on eBay, to expanding onto
+                        multiple sales channels with global fulfilment including
+                        manufacturing products on a large scale - this
+                        experience combined with my eagerness to learn sparked a
+                        desire to innovate and problem solve, the transition to
+                        a career in technology is perfect for me to explore
+                        these passions further.
+                    </p>
+                </div>
+            </div>
+            <img
+                src="images/about.jpg"
+                alt="a photo of me on a cliff edge"
+                class="about-me__body--image"
+            />
+        </section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2 class="section__title section__title--projects">Projects</h2>
-      <p class="section__subtitle section__subtitle--projects">
-        Here is some of my work
-      </p>
-      <p class="projects__body--text">
-        Some sort of grid to display projects with brief description will be
-        added here. Possibly a separate page for each project showing a more
-        indepth description and/or code. Use flexbox to create layout.
-      </p>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <h2 class="section__title section__title--projects">Projects</h2>
+            <p class="section__subtitle section__subtitle--projects">
+                Here is some of my work
+            </p>
+            <p class="projects__body--text">
+                <!-- Description -->
+            </p>
 
-      <div class="projects__list-wrapper">
-        <div class="project__item--title project__item--title1">Project 1</div>
-        <a href="#" class="project__item--link">
-          <div class="project__item--image project__item--image1"></div>
-        </a>
-        <p class="project__item--desc project__item--desc1">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
-        </p>
+            <div class="projects__list-wrapper">
+                <div class="project__item--title project__item--title1">
+                    Just Choose
+                </div>
+                <a href="#" class="project__item--link">
+                    <div
+                        class="project__item--image project__item--image1"
+                    ></div>
+                </a>
+                <p class="project__item--desc project__item--desc1">
+                    A voting app with the purpose of making group decisions
+                    easier, with a fun twist. An organiser can create a
+                    shortlist to provide a link to participants. Voters can
+                    swipe to vote, results will be displayed on the deadline
+                    date.
+                </p>
+                <div class="project__item--links project__item--links1">
+                    <a href="">Frontend Repo</a> /
+                    <a href="https://github.com/williamyap90/be-just-choose"
+                        >Backend Repo</a
+                    >
+                    /
+                    <a href="">Netlify</a>
+                </div>
 
-        <div class="project__item--title project__item--title2">Project 2</div>
-        <a href="#" class="project__item--link">
-          <div class="project__item--image project__item--image2"></div>
-        </a>
-        <p class="project__item--desc project__item--desc2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
-        </p>
+                <div class="project__item--title project__item--title2">
+                    NC Board Games
+                </div>
+                <a href="#" class="project__item--link">
+                    <div
+                        class="project__item--image project__item--image2"
+                    ></div>
+                </a>
+                <p class="project__item--desc project__item--desc2">
+                    NC Board Games is a social games content rating and
+                    discussion website which interacts with a RESTful API server
+                    I created. The project is a React app, built with JavaScript
+                    and styled with CSS.
+                </p>
+                <div class="project__item--links project__item--links2">
+                    <a
+                        href="https://github.com/williamyap90/nc-boardgames-react"
+                        >GitHub Repo</a
+                    >
+                    /
+                    <a href="https://nc-boardgames.netlify.app/">Netlify</a>
+                </div>
 
-        <div class="project__item--title project__item--title3">Project 3</div>
-        <a href="#" class="project__item--link">
-          <div class="project__item--image project__item--image3"></div>
-        </a>
-        <p class="project__item--desc project__item--desc3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
-        </p>
+                <div class="project__item--title project__item--title3">
+                    NC Board Games API
+                </div>
+                <a href="#" class="project__item--link">
+                    <div
+                        class="project__item--image project__item--image3"
+                    ></div>
+                </a>
+                <p class="project__item--desc project__item--desc3">
+                    API built with express, nodePostgres & PSQL. Development of
+                    this application focused heavily on utilising TDD & Jest to
+                    reduce bugs in production. Hosted on Heroku.
+                </p>
+                <div class="project__item--links project__item--links3">
+                    <a href="https://github.com/williamyap90/nc-boardgames-api"
+                        >GitHub Repo</a
+                    >
+                    /
+                    <a href="https://nc-boardgames.herokuapp.com/api/"
+                        >Heroku</a
+                    >
+                </div>
 
-        <div class="project__item--title project__item--title4">Project 4</div>
-        <a href="#" class="project__item--link">
-          <div class="project__item--image project__item--image4"></div>
-        </a>
-        <p class="project__item--desc project__item--desc4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
-        </p>
+                <!-- <div class="project__item--title project__item--title4">
+                    Project 4
+                </div>
+                <a href="#" class="project__item--link">
+                    <div
+                        class="project__item--image project__item--image4"
+                    ></div>
+                </a>
+                <p class="project__item--desc project__item--desc4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Distinctio ducimus dolor nisi mollitia officiis ut provident
+                    nam obcaecati.
+                </p>
 
-        <div class="project__item--title project__item--title5">Project 5</div>
-        <a href="#" class="project__item--link">
-          <div class="project__item--image project__item--image5"></div>
-        </a>
-        <p class="project__item--desc project__item--desc5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ducimus dolor nisi mollitia officiis ut provident nam obcaecati.
-        </p>
-      </div>
+                <div class="project__item--title project__item--title5">
+                    Project 5
+                </div>
+                <a href="#" class="project__item--link">
+                    <div
+                        class="project__item--image project__item--image5"
+                    ></div>
+                </a>
+                <p class="project__item--desc project__item--desc5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Distinctio ducimus dolor nisi mollitia officiis ut provident
+                    nam obcaecati.
+                </p> -->
+            </div>
 
-      <h3 class="all-projects">
-        <a href="/projects.html">All projects</a>
-      </h3>
-    </section>
+            <h3 class="all-projects">
+                <a href="/projects.html">All projects</a>
+            </h3>
+        </section>
 
-    <!-- Footer with social links -->
-    <section class="contact" id="contact">
-      <h3 class="section__title section__title--contact">Contact</h3>
-      <p class="section__subtitle section__subtitle--contact">
-        Connect with me
-      </p>
-      <div class="arrow__right"></div>
+        <!-- Footer with social links -->
+        <section class="contact" id="contact">
+            <h3 class="section__title section__title--contact">Contact</h3>
+            <p class="section__subtitle section__subtitle--contact">
+                Connect with me
+            </p>
+            <div class="arrow__right"></div>
 
-      <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="mailto:william.yap90@gmail.com">
-          <i class="fa fa-envelope"></i>
-        </a>
+            <div class="icon-bar">
+                <a class="active" href="#"><i class="fa fa-home"></i></a>
+                <a href="mailto:william.yap90@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                </a>
 
-        <a href="https://github.com/williamyap90">
-          <i class="fa fa-github"></i>
-        </a>
+                <a href="https://github.com/williamyap90">
+                    <i class="fa fa-github"></i>
+                </a>
 
-        <a href="https://linkedin.com/in/william--yap">
-          <i class="fa fa-linkedin"></i>
-        </a>
-      </div>
-    </section>
-  </body>
+                <a href="https://linkedin.com/in/william--yap">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </body>
 </html>
